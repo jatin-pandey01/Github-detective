@@ -34,17 +34,6 @@ body{
     font-size: 2rem;
 }
 
-p[dark-light]{
-    font-size: 1rem;
-}
-
-/* p[dark-icon]{
-    display: none;
-} */
-
-/* p[light-icon]{
-    display: flex;
-} */
 
 .mode{
     cursor: pointer;
