@@ -269,6 +269,7 @@ span{
         display: flex;
         flex-direction: column;
         border-radius: 15px;
+        border: 2px solid blue;
     }
     .information img[user-image]{
         height: 150px;
