@@ -17,7 +17,7 @@ const error = document.querySelector('[error]');
 
 const theme = document.querySelector('[dark-light]');
 console.log(theme);
-theme.textContent = 'LIGHT';
+// theme.textContent = 'LIGHT';
 
 get();
 

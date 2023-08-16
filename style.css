@@ -25,7 +25,8 @@ body{
     max-width: 95%;
     color: #4B6A9B;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    /* justify-content: space-between; */
     margin-bottom: 30px;
 }
 
@@ -269,7 +270,6 @@ span{
         display: flex;
         flex-direction: column;
         border-radius: 15px;
-        border: 2px solid blue;
     }
     .information img[user-image]{
         height: 150px;
@@ -309,7 +309,7 @@ span{
         width: 50%;
         border-radius: 15px;
         margin: 10px;
-        border: 2px solid blue;
+        /* border: 2px solid blue; */
     }
     span{
         position: absolute;
