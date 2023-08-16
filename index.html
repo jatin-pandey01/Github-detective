@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" 
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Github detective</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="heading-container">
+            <h1>DevDetective</h1>
+            <div class="mode">
+                <p dark-light>DARK</p>
+                <p dark-icon><i class="fa-solid fa-moon"></i></p>
+                <p ligth-icon><i class="fa-regular fa-lightbulb"></i></p>
+            </div>
+        </div>
+
+        <form class="search-tab">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="user-name" placeholder="Enter a Github username..." required>
+            <span error>No Search Results</span>
+            <button type="submit" submit-btn>Search</button>
+        </form>
+
+        <div class="information">
+            <div class1>
+                <img user-image>
+            </div>
+            <div class="user-info">
+                <div class="name-and-joining">
+                    <p userName></p>
+                    <p joining></p>
+                </div>                
+                <a href="" target="_blank" user-id></a>
+                <p desc></p>
+                <div class="repos-followers-following">
+                    <div class="box">
+                        <p>Repos</p>
+                        <h2 repos></h2>
+                    </div>
+                    <div class="box">
+                        <p>Followers</p>
+                        <h2 followers></h2>
+                    </div>
+                    <div class="box">
+                        <p>Following</p>
+                        <h2 following></h2>
+                    </div>
+                </div>
+
+                <div class="user-personal-info">
+                    <div class="box1">
+                        <div class="cont">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p location></p>
+                        </div>
+                        <div class="cont">
+                            <i class="fa-solid fa-link"></i>
+                            <a href="" target="_blank" blog></a>
+                        </div>
+                    </div>
+                    <div class="box1">
+                        <div class="cont">
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <a href="" target="_blank" twitter></a>
+                        </div>
+                        <div class="cont">
+                            <i class="fa-regular fa-building"></i>
+                            <p company></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/c0ecd255c0.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
