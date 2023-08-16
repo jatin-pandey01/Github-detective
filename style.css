@@ -12,7 +12,7 @@ body{
 }
 
 .wrapper{
-    max-width: 70%;
+    max-width: 95%;
     width: 730px;
     display: flex;
     flex-direction: column;
@@ -22,6 +22,7 @@ body{
 }
 
 .heading-container{
+    max-width: 95%;
     color: #4B6A9B;
     display: flex;
     justify-content: space-between;
@@ -36,13 +37,13 @@ p[dark-light]{
     font-size: 1rem;
 }
 
-p[dark-icon]{
+/* p[dark-icon]{
     display: none;
-}
+} */
 
-p[light-icon]{
+/* p[light-icon]{
     display: flex;
-}
+} */
 
 .mode{
     cursor: pointer;
@@ -58,7 +59,6 @@ p[light-icon]{
     height: 50px;
     display: flex;
     align-items: center;
-    /* justify-content: s; */
     /* background-color: aqua; */
     margin-bottom: 30px;
     border-radius: 15px;
@@ -118,9 +118,11 @@ span{
 }
 
 .information{
+    /* max-width: 90%; */
     padding: 40px 30px;
     background-color: rgb(254, 254,254);
     display: flex;
+    border-radius: 15px;
 }
 
 .information img[user-image]{
@@ -150,7 +152,7 @@ span{
     color: #4B6A98;
     opacity: 0.8;
     margin-bottom: 2rem;
-    /* word-wrap: break-word; */
+    width: 100%;
 }
 
 .repos-followers-following{
@@ -160,6 +162,7 @@ span{
     border-radius: 10px;
     /* padding: 20px 0; */
     margin-bottom: 30px;
+    /* border: 2px solid blue; */
 }   
 
 .box{
@@ -188,80 +191,152 @@ span{
     display: flex;
 }
 
-@media screen and (max-width: 1000px) {
-    .information {
-      /* background-color: darkblue; */
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 20px 20px;
+@media screen and (max-width:750px){
+    .wrapper{
+        width: 95%;
     }
-    div[class1]{
-        text-align: center;
-        /* display: flex; */
+    .heading-container{
+        width: 100%;        
     }
-    .information img[user-image]{
-        height: 150px;
-        width: 150px;
-        border-radius: 50%;
-        /* margin-top: 1rem; */
-        /* margin-right: 1rem; */
+    .heading-container h1{
+        font-size: 1.5rem;
     }
-    .box{
-        width: 30%;
-        margin: 10px 15px;
+    
+    p[dark-light]{
+        font-size: 1rem;
+    }
+    span{
+        position: absolute;
+        font-size: 12px;
+        font-weight: 500;
+        top: 10%;
+        left: 10%;
+        color: red;
+        padding: 2px;
+        border-radius: 5px;
+        background-color: rgb(228, 226, 226);
+        opacity: 0;
     }
     .search-tab{
         all: unset;
         height: 40px;
         display: flex;
         align-items: center;
-        /* justify-content: s; */
-        /* background-color: aqua; */
         margin-bottom: 30px;
         border-radius: 15px;
-        padding: 0.75rem;
+        padding: 0.5rem;
         background-color: rgb(254, 254,254);
         box-shadow: 0px 10px 15px 5px rgb(224, 229, 246);
+    }
+    .fa-magnifying-glass{
+        cursor: text;
+        padding-left: 4px;
+        /* padding-right: 5px; */
+        font-size: 1rem;
+        font-weight: 100;
+        color: rgba(13, 94, 244, 0.779);
+    }
+    .search-tab input{
+        all: unset;
+        height: 100%;
+        width: 75%;
+        /* padding-right: 10%; */
+        font-size: 100%;
+        color: #4B6A98;
+    }
+    
+    .search-tab input::placeholder{
+        font-size: 100%;
+        color: #4B6A98;
     }
     .search-tab button{
         all: unset;
         background-color: rgba(1, 120, 255, 0.916);
-        width: 20%;
+        /* max-width: 50%; */
+        width: 18%;
         height: 100%;
         color: white;
         border-radius: 10px;
         text-align: center;
-        font-size: 1rem;
-        margin-left: 5px;
+        font-size: 100%;
+        margin-left: 10px;
         cursor: pointer;
     }
-    .search-tab input{
-        all: unset;
-        /* margin-left: 5px; */
-        height: 100%;
-        width: 75%;
-        font-size: 1rem;
-        color: #4B6A98;
-        /* background-color: black; */
+    .information{
+        max-width: 100%;
+        padding: 20px 15px;
+        background-color: rgb(254, 254,254);
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
     }
-    
-    .search-tab input::placeholder{
-        font-size: 1rem;
-        color: #4B6A98;
+    .information img[user-image]{
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        margin-right: 2.5rem;
     }
+    div[class1]{
+        text-align: center;
+    }
+    .name-and-joining{
+        font-size: 1rem;
+    }
+    .information p[desc]{
+        margin-top: 1rem;
+        color: #4B6A98;
+        opacity: 0.8;
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+}
 
-    .information p[userName]{
-        font-size: 1.25rem;
-        font-weight: 900;
+@media screen and (max-width:450px){
+    .repos-followers-following{
+        /* align-self: center; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        align-items: center;
+        text-align: center;
+        background-color: transparent;
+    }   
+    .box{
+        background-color: #F6F8FF;
+        width: 50%;
+        border-radius: 15px;
+        margin: 10px;
+        border: 2px solid blue;
+    }
+    span{
+        position: absolute;
+        font-size: 12px;
+        font-weight: 500;
+        top: 8%;
+        left: 12%;
+        color: red;
+        padding: 2px;
+        border-radius: 5px;
+        background-color: rgb(228, 226, 226);
+        opacity: 0;
     }
     .fa-solid,.fa-brands,.fa-regular{
-        font-size: 1rem;
-        margin-right: 1rem;
+        font-size: 1.1rem;
+        margin-right: 0.5rem;
     }
-
-    .information p[userName]{
-        font-size: 1.25rem;
-        font-weight: 900;
+    .box1{
+        margin: 10px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        color: #4B6A98;
+        opacity: 0.7;
+        margin-bottom: 40px;
+    }
+    .cont{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
